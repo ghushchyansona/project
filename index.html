@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+   <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Main css file -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+<!--navbar started-->
+<nav class="navbar navbar-expand-xl navbar-light bg-light menu">
+  <div class="container-fluid fluid">
+<!--logo started-->
+    <a class="navbar-brand mb-4 mt-3  ms-0 ms-xl-5 first" href="#"> <img src="img/logo.png" alt="" class="logo"></a>
+<!--logo end-->
+    <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<!--menu started-->
+      <ul class="navbar-nav  me-0 ms-0 ms-xl-3">
+<!--dropdown started-->
+       <li class="nav-item dropdown me-2 ">
+          <a class="nav-link dropdown-toggle navbarDropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Անշարժ գույք
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Բնակարան</a></li>
+            <li><a class="dropdown-item" href="#">Տուն</a></li>
+            <li><a class="dropdown-item" href="#">Առանձնատուն</a></li>
+            <li><a class="dropdown-item" href="#">Ամառանոց</a></li>
+            <li><a class="dropdown-item" href="#">Գրասենյակ</a></li>
+            <li><a class="dropdown-item" href="#">Ռեստորան</a></li>
+            <li><a class="dropdown-item" href="#">Խանութ</a></li>
+            <li><a class="dropdown-item" href="#">Գրասենյակ</a></li>
+            <li><a class="dropdown-item" href="#">Հյուրանոց</a></li>
+            <li><a class="dropdown-item" href="#">Այլ</a></li>
+          </ul>
+        </li>
+         <li class="nav-item dropdown me-4">
+          <a class="nav-link dropdown-toggle navbarDropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ծառայություններ
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Գնահատում</a></li>
+            <li><a class="dropdown-item" href="#">Շինարարություն</a></li>
+            <li><a class="dropdown-item" href="#">Դիզայն</a></li>
+            <li><a class="dropdown-item" href="#">Վերանորոգում</a></li>
+          </ul>
+        </li>
+<!--dropdown end-->
+        <li class="nav-item me-4">
+          <a class="nav-link navbarDropdown" href="#">Մեր մասին</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link navbarDropdown" href="#">Հետադարձ կապ</a>
+        </li>
+         <li class="nav-item me-4">
+          <img src="img/heart.png" alt="" class="nav-link disabled heart" tabindex="-1" aria-disabled="true">
+        </li>
+         <li class="nav-item dropdown language">
+          <a class="nav-link dropdown-toggle navbarDropdown me-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Arm
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Rus</a></li>
+            <li><a class="dropdown-item" href="#">Eng</a></li>
+          </ul>
+        </li>
+        <!--login started-->
+        <li>
+           <button class="btn mb-3  ms-0 signIn " type="submit">
+           <p class="login navbarDropdown" data-bs-toggle="modal" data-bs-target="#signIn">Մուտք</p></button>
+           </li>
+        <!--login end-->
+      </ul>
+<!--menu end-->
+    </div>
+  </div>
+</nav>
+<!--navbar end-->
+
+ <!--Modal sigIn started-->
+<div class="modal fade" id="signIn" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Մուտք</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form action="">
+             <i class="fal fa-envelope fa-envelope1"></i>
+       <p><input type="text" name="email" placeholder="Էլ․ հասցե" class="formInputs">
+          </p>
+           <i class="fal fa-lock fa-lock1"></i>
+           <p><input type="password" name="password" placeholder="Գաղտնաբառ" class="formInputs">
+          </p>
+      </form>
+       <p class="forget">Մոռացե՞լ եք գաղտնաբառը։</p>
+       <button type="button" class="minLogin">Մուտք</button>
+      </div>
+      <hr class="line">
+      <div class="modal-footer">
+       <p class="notReg"> Գրանցված չե՞ք։ &nbsp;
+           <a  href="#signUp" data-bs-toggle="modal" data-bs-dismiss="modal"class="register" >Գրանցվել</a>
+           </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal sigIn end-->
+
+<!--Modal signUp started-->
+<div class="modal fade" id="signUp" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel1">Գրանցում</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form>
+        <p>
+        <i class="fal fa-user"></i>
+         <input type="text" name="username" placeholder="Անուն" class="formInputs">
+          </p>
+           <i class="fal fa-envelope fa-envelope2"></i>
+       <p><input type="text" name="email" placeholder="Էլ․հասցե" class="formInputs">
+          </p>
+           <i class="fal fa-lock fa-lock2"></i>
+           <p><input type="password" name="password" placeholder=" Գաղտնաբառ" class="formInputs">
+          </p>
+</form>
+       <button type="button" class="maxLogin">Գրանցվել</button>
+      </div>
+      <hr class="line">
+      <div class="modal-footer">
+       <p class="notReg1"> Արդեն հաշիվ ունե՞ք։ &nbsp;
+           <a href="#signIn" data-bs-toggle="modal" data-bs-dismiss="modal" class="register">Մուտք գործել</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal signUp end-->
+<!--Main started-->
+ <main>
+ <div class="main">
+<div class="filter">
+<div class="mainFilter row rows">
+        <div class="col-6 col-lg-3"><button class="btn" type="submit">Վաճառք</button></div>
+        <div class="col-6 col-lg-3"><button class="btn" type="submit">Վարձակալություն</button></div>
+        <div class="col-6 col-lg-3 sell"><button class="btn" type="submit">Նորակառույց</button></div>
+        <div class="col-6 col-lg-3 sell"><button class="btn" type="submit">Օրավարձով</button></div>
+
+ </div>
+<!--form started-->
+    <form action="" class="formFilter">
+    <div class="form row">
+         <div class="col-10 col-lg-6 rowsLeft">
+          <select class="form-select" aria-label="Default select example">
+              <option selected>Գույքի տեսակը</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+         </select>
+         </div>
+         <div class="col-10 col-lg-6 rowsRight">
+          <select class="form-select region" aria-label="Default select example">
+              <option selected>Մարզ</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+          </select>
+         </div>
+             <div class="form col-10 col-lg-6 rowsLeft">
+     <select class="form-select" aria-label="Default select example">
+  <option selected>Քաղաք/Գյուղ</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+         </select>
+              </div>
+         <div class="form col-10 col-lg-6 rowsRight">
+      <select class="form-select region" aria-label="Default select example">
+  <option selected>Վարչական շրջան</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+                   </div>
+       <div class="form col-10 col-lg-6 rowsLeft">
+    <input type="text" id="input" placeholder="Փողոց">
+        </div>
+     <div class="form col-10 col-lg-6 rowsRight">
+      <select class="form-select region" aria-label="Default select example">
+  <option selected>Կառույցի տեսակը</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+        </div>
+                  <div class="formInput col-10 col-lg-6 rowsRight3">
+                   <p id="price">Գինը</p>
+    <input type="text" placeholder="Սկսած" class="formInput1">
+    <input type="text" placeholder="Մինչև" class="formInput1">
+        </div>
+        <div class="formInput col-10 col-lg-6 rowsRight5">
+   <button class="btn" type="submit"><i class="fas fa-coins coins"></i> USD</button>
+   <button class="btn" type="submit"><i class="fas fa-coins coins"></i>  AMD</button>
+   <button class="btn" type="submit"><i class="fas fa-coins coins"></i>  EUR</button>
+                 </div>
+
+          <div class="count  col-10 col-lg-6 rowsRight2">
+          <p id="room">Սենյակ</p>
+   <button class="btn number" type="submit">1</button>
+   <button class="btn number" type="submit">2</button>
+   <button class="btn number" type="submit">3</button>
+   <button class="btn number4" type="submit">4+</button>
+          </div>
+        <div class="form  col-10 col-lg-6 rowsLeft">
+        <select class="form-select" aria-label="Default select example">
+  <option selected>Վերանորոգում</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+        </select>
+        </div>
+        <div class="form  col-10 col-lg-6 rowsRight4">
+    <input type="text" placeholder="Սկսած" class="formInput1">
+    <input type="text" placeholder="Մինչև" class="formInput1">
+        </div>
+           </div>
+    </form>
+     </div>
+     </div>
+<!--form end-->
+<!--filter result start-->
+<!--containser-fluid started-->
+<div class="container-fluid">
+     <div class="welcome"> <h5>ԼԱՎԱԳՈՒՅՆ ԱՌԱՋԱՐԿՆԵՐ</h5>
+     <div class="hr"> <hr></div>
+      <div class="hr1"> <hr></div>
+     </div>
+     <!--containser-fluid started-->
+    <div class="row">
+        <div class="col-10 col-sm-8 col-md-6 col-lg-4  col-xl-4 items">
+           <div class="parent">
+            <img src="img/1.jpg" alt="" class="picture">
+             <div class="urgent">
+             <button class="btn btn-primary btns" type="submit">Շտապ</button></div>
+              <div class="heart">
+               <img src="img/heart-white.png" class="minheart" alt="">
+              </div>
+              <div class="child">
+              <div  class="title">
+                 <h6>|ԷՔՍԿԼՅՈՒԶԻՎ|</h6>
+                 </div>
+                <div class="prices"> <p class="p"> $8500</p></div>
+                <div class="list"><h6> 2 ՍԵՆՅԱԿ ՓՈՔՐ ԿԵՆՏՐՈՆՈՒՄ</h6> </div>
+                <div class="count"> <p>8/14 հարկ | 2սեն․ | 44ք․մ</p></div>
+                <div class="btns">
+                    <button type="submit" class="seeMore" >Տեսնել ավելին</button>
+                   <p class="cod">Կոդ՝ 3256</p>
+                </div>
+              </div>
+           </div>
+        </div>
+          <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-4 items">
+           <div class="parent">
+            <img src="img/2.jpg" alt="" class="picture">
+              <div class="heart">
+               <img src="img/heart.png" class="minheart" alt="">
+              </div>
+              <div class="child">
+                <div  class="title">
+                 <h6>|ԷՔՍԿԼՅՈՒԶԻՎ|</h6>
+                 </div>
+                <div class="prices"> <p class="p"> $8500</p></div>
+                <div class="list"><h6> 2 ՍԵՆՅԱԿ ՓՈՔՐ ԿԵՆՏՐՈՆՈՒՄ</h6> </div>
+                <div class="count"> <p>8/14 հարկ | 2սեն․ | 44ք․մ</p></div>
+                <div class="btns">
+                    <button type="submit" class="seeMore">Տեսնել ավելին</button>
+                   <p class="cod">Կոդ՝ 3256</p>
+                </div>
+              </div>
+           </div>
+        </div>
+          <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-4 items">
+           <div class="parent">
+            <img src="img/3.jpg" alt="" class="picture">
+              <div class="heart">
+               <img src="img/heart-white.png" class="minheart" alt="">
+              </div>
+              <div class="child">
+              <div  class="title">
+                 <h6>|ԷՔՍԿԼՅՈՒԶԻՎ|</h6>
+                 </div>
+                <div class="prices"> <p class="p"> $8500</p></div>
+                <div class="list"><h6> 2 ՍԵՆՅԱԿ ՓՈՔՐ ԿԵՆՏՐՈՆՈՒՄ</h6> </div>
+                <div class="count"> <p>8/14 հարկ | 2սեն․ | 44ք․մ</p></div>
+                <div class="btns">
+                    <button type="submit" class="seeMore">Տեսնել ավելին</button>
+                   <p class="cod">Կոդ՝ 3256</p>
+                </div>
+              </div>
+           </div>
+        </div>
+        <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-4 items">
+           <div class="parent">
+            <img src="img/1.jpg" alt="" class="picture">
+              <div class="heart">
+               <img src="img/heart-white.png" class="minheart" alt="">
+              </div>
+              <div class="child">
+              <div  class="title">
+                 <h6>|ԷՔՍԿԼՅՈՒԶԻՎ|</h6>
+                 </div>
+                <div class="prices"> <p class="p"> $8500</p></div>
+                <div class="list"><h6> 2 ՍԵՆՅԱԿ ՓՈՔՐ ԿԵՆՏՐՈՆՈՒՄ</h6> </div>
+                <div class="count"> <p>8/14 հարկ | 2սեն․ | 44ք․մ</p></div>
+                <div class="btns">
+                    <button type="submit" class="seeMore">Տեսնել ավելին</button>
+                   <p class="cod">Կոդ՝ 3256</p>
+                </div>
+              </div>
+           </div>
+        </div>
+          <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-4 items">
+           <div class="parent">
+            <img src="img/2.jpg" alt="" class="picture">
+             <div class="urgent">
+             <button class="btn btn-primary btns" type="submit">Շտապ</button></div>
+              <div class="heart">
+               <img src="img/heart.png" class="minheart" alt="">
+              </div>
+              <div class="child">
+                <div  class="title">
+                 <h6>|ԷՔՍԿԼՅՈՒԶԻՎ|</h6>
+                 </div>
+                <div class="prices"> <p class="p"> $8500</p></div>
+                <div class="list"><h6> 2 ՍԵՆՅԱԿ ՓՈՔՐ ԿԵՆՏՐՈՆՈՒՄ</h6> </div>
+                <div class="count"> <p>8/14 հարկ | 2սեն․ | 44ք․մ</p></div>
+                <div class="btns">
+                    <button type="submit" class="seeMore">Տեսնել ավելին</button>
+                   <p class="cod">Կոդ՝ 3256</p>
+                </div>
+              </div>
+           </div>
+        </div>
+          <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-4 items">
+           <div class="parent">
+            <img src="img/3.jpg" alt="" class="picture">
+              <div class="heart">
+               <img src="img/heart-white.png" class="minheart" alt="">
+              </div>
+              <div class="child">
+              <div  class="title">
+                 <h6>|ԷՔՍԿԼՅՈՒԶԻՎ|</h6>
+                 </div>
+                <div class="prices"> <p class="p"> $8500</p></div>
+                <div class="list"><h6> 2 ՍԵՆՅԱԿ ՓՈՔՐ ԿԵՆՏՐՈՆՈՒՄ</h6> </div>
+                <div class="count"> <p>8/14 հարկ | 2սեն․ | 44ք․մ</p></div>
+                <div class="btns">
+                    <button type="submit" class="seeMore" >Տեսնել ավելին</button>
+                   <p class="cod">Կոդ՝ 3256</p>
+              </div>
+              </div>
+           </div>
+        </div>
+
+    </div>
+      <!--containerend-->
+<!--filter result end-->
+     </div>
+  <!--container-fluid end-->
+  </main>
+<!--Main end-->
+<!--services started-->
+    <div class="services">
+         <div class="servic"> <h5>ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</h5>
+         <div class="hr"> <hr></div>
+          <div class="hr1"> <hr></div>
+         </div>
+    <div class="container">
+        <div class="row ourServices">
+        <div class="col-10 col-md-5 items2">
+            <div class="estate">
+                <img src="img/estate.png" alt="" class="imgIcon">
+                <p>Գնահատում</p>
+                <div class="child2"></div>
+            </div>
+        </div>
+        <div class="col-10 col-md-5 items2">
+            <div class="constraction">
+                <img src="img/constraction.png" alt="" class="imgIcon">
+                <p>Շինարարություն</p>
+                <div class="child2"></div>
+            </div>
+        </div>
+         <div class="col-10 col-md-5 items2">
+           <div class="design">
+         <img src="img/design-icon.png" alt="" class="imgIcon">
+           <p>Դիզայն</p>
+            <div class="child2"></div>
+        </div>
+           </div>
+    <div class="col-10 col-md-5 items2">
+           <div class="estate2">
+         <img src="img/services-icon4.png" alt="" class="imgIcon">
+           <p>Վերանորոգում</p>
+            <div class="child2"></div>
+        </div>
+           </div>
+    </div>
+    </div>
+    </div>
+<!--services end-->
+<!--Footer started-->
+<footer>
+<div class="footerImage">
+ <div class="row footerFirst" >
+       <div class="footerLogo col-10 col-md-5">
+       <a href="#"><img src="img/logo.png" alt="" class="logoFooter"></a>
+       <p> <i class="fal fa-map-marker-alt"></i> &nbsp; Հայաստան, Երևան, Արամի 86 </p>
+    <p class="tel"><i class="fal fa-phone-alt"></i> &nbsp;+374 &nbsp; 99 &nbsp; 535 &nbsp; 235</p>
+    <p class="tel"> &nbsp; &nbsp; &nbsp; &nbsp;  +374 &nbsp; 98 &nbsp; 535 &nbsp; 235</p>
+    <p class="tel"> &nbsp; &nbsp; &nbsp; &nbsp; +374 &nbsp; 44 &nbsp; 202 &nbsp; 095</p>
+    <p><i class="fal fa-envelope"></i> &nbsp; info@guyq.am</p></div>
+       <div class="footerMenu col-10 col-md-5">
+          <p><a href="">Անշարժ գույք</a></p>
+    <p><a href="">Ծառայություններ</a></p>
+    <p><a href="">Մեր մասին</a></p>
+    <p><a href="">Հետադարձ կապ</a></p>
+       </div>
+       <div class="footerSocial col-10 col-md-5">
+        <p>Գտեք մեզ սոց․ ցանցերում</p>
+        <p><a href="#"><i class="fab fa-facebook-f"></i></a></p>
+        <p><a href="#"><i class="fab fa-instagram"></i></a></p>
+        </div>
+       </div>
+</div>
+</footer>
+
+<!--Footer end-->
+</body>
+</html>
